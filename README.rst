@@ -1,7 +1,7 @@
 Application Services Integration iApp (Community Edition)
 =========================================================
 
-|docs|
+|travis build| |docs|
 
 .. _Documentation: http://appsvcs-integration-iapp.readthedocs.io/en/latest/index.html
 
@@ -13,3 +13,5 @@ To download the latest release click `here <https://github.com/0xHiteshPatel/app
     :alt: Documentation Status
     :scale: 100%
     :target: http://appsvcs-integration-iapp.readthedocs.io/en/latest/?badge=latest
+.. |travis build| image:: https://travis-ci.org/RafalKorepta/appsvcs_integration_iapp.svg?branch=develop
+    :target: https://travis-ci.org/RafalKorepta/appsvcs_integration_iapp 
