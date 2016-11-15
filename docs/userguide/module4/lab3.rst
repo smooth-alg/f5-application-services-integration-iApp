@@ -59,3 +59,5 @@ required:
 
 #. Monitor the deployment log on BIG-IP using ``tail –f /var/tmp/scriptd.out``
  
+If you are running our functional tests you will need a real BIG-IP® to run
+them against, but you can get one of those pretty easily in [Amazon EC2](https://aws.amazon.com/marketplace/pp/B00JL3UASY/ref=srh_res_product_title?ie=UTF8&sr=0-10&qid=1449332167461).
