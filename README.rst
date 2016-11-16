@@ -28,13 +28,25 @@ Introduction
 
 The purpose of this project is to provide an iApp template that can be used to automate and orchestrate Layer 4-7 applications service deployments using F5 Networks BIG-IP/iWorkflow Products. Additionally, this template serves as a common integration point for third party SDN/NFV/Automation/Orchestration products.
 
+Documentation
+-------------
 
-Please refer to the F5 App Services Integration iApp `project documentation <http://f5-openstack-lbaasv2-driver.readthedocs.io>`_ for detailed information.
+Please refer to the F5 App Services Integration iApp `project documentation TBD(readTheDocs)`_ for detailed information.
 
 Release
 ---------
 
-To download the latest release click `here <https://github.com/0xHiteshPatel/appsvcs_integration_iapp/releases>`_
+To download the latest release click `here <https://github.com/F5Networks/f5-application-services-integration-iApp/releases>`_
+
+Filing Issues
+-------------
+
+If you find an issue, we would love to hear about it. Please let us know by filing an `issue <https://github.com/F5Networks/f5-application-services-integration-iApp/blob/release/v2.0_001/CONTRIBUTING.md>`_ in this repository. Use the issue template to tell us as much as you can about what you found, how you found it, your environment, etc.. We also welcome you to file feature requests as issues.
+
+Contributing
+------------
+
+See `Contributing TBD(email)`_.
 
 Copyright
 ---------
@@ -44,7 +56,7 @@ Copyright 2015-2016 F5 Networks Inc.
 Support
 -------
 
-See `Support <https://github.com/F5Networks/f5-openstack-lbaasv2-driver/blob/master/SUPPORT>`_.
+See `Support <https://github.com/F5Networks/f5-application-services-integration-iApp/blob/release/v2.0_001/SUPPORT.rst>`_.
 
 License
 -------
@@ -68,8 +80,8 @@ Contributor License Agreement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Individuals or business entities who contribute to this project must
 have completed and submitted the `F5 Contributor License
-Agreement <http://f5-openstack-docs.readthedocs.org/en/latest/cla_landing.html>`_
-to Openstack_CLA@f5.com prior to their code submission being included
+Agreement TBD(readthedocs link)`_
+to TBD(email) prior to their code submission being included
 in this project.
 
 .. |docs| image:: https://readthedocs.org/projects/appsvcs-integration-iapp/badge/?version=latest
