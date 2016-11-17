@@ -1,7 +1,8 @@
 {
 	"username":"admin",
 	"password":"admin",
-	"template_name":"latest",
+	"template_name":"appsvcs_integration_v2.1dev-001_001.tmpl",
+	"name": "latest",
 	"inheritedDevicegroup": "true",
     "deviceGroup": "none",
     "inheritedTrafficGroup": "true",
