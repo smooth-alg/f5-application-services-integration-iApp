@@ -60,7 +60,7 @@
                          "columnNames": ["Group","Target","Parameter"],
                          "rows" : [ 
                             { "row": ["0","forward/request/select/pool","pool:1"] },
-                            { "row": ["1","asm/request/enable/policy","bundled:linux-low"] },
+                            { "row": ["1","asm/request/enable/policy","bundled:linux-medium"] },
                             { "row": ["default","asm/request/enable/policy","bundled:linux-low"]}
                          ]
                }       
