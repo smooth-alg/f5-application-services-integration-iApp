@@ -153,6 +153,8 @@ parser.add_argument("-D", "--debug",    help="Enable debug output", action="stor
 parser.add_argument("-n", "--nocheck",  help="Don't check for deployment completion", action="store_true")
 parser.add_argument("-c", "--checknum", help="Number of times to check for deployment completion", default=10, type=int)
 parser.add_argument("-w", "--checkwait",help="Delay in seconds between each deployment completion check", default=6, type=int)
+parser.add_argument("-m", "--mgmtport", help="port for management gui", default=443, type=int )
+
 
 args = parser.parse_args()
 
@@ -198,11 +200,11 @@ for item in required:
 debug("final=%s" % pp.pformat(final))
 
 # Set our REST urls
-iapp_url       = "https://%s/mgmt/tm/sys/application/service" % (args.host)
-save_url       = "https://%s/mgmt/tm/sys/config" % (args.host)
-template_url   = "https://%s/mgmt/tm/sys/application/template?$select=name" % (args.host)
+iapp_url       = "https://%s:%s/mgmt/tm/sys/application/service" % (args.host,args.mgmtport)
+save_url       = "https://%s:%s/mgmt/tm/sys/config" % (args.host,args.mgmtport)
+template_url   = "https://%s:%s/mgmt/tm/sys/application/template?$select=name" % (args.host,args.mgmtport)
 iapp_exist_url = "%s/~%s~%s.app~%s" % (iapp_url, final["partition"], final["name"], final["name"])
-bash_url       = "https://%s/mgmt/tm/util/bash" % (args.host)
+bash_url       = "https://%s:%s/mgmt/tm/util/bash" % (args.host,args.mgmtport)
 
 # Create request session, set credentials, allow self-signed SSL cert
 s = requests.session()
@@ -273,6 +275,8 @@ for string in final["strings"]:
 deploy_payload["tables"] = final["tables"]
 deploy_payload["lists"] = final["lists"]
 
+debug("deploy_payload=%s" % json.dumps(deploy_payload))
+
 # Check to see if the template with the name specified in the arguments exists on the BIG-IP device
 debug("exist_url=%s" % iapp_exist_url)
 resp = s.get(iapp_exist_url)
@@ -305,7 +309,6 @@ else:
 	del deploy_payload["deviceGroup"]
 	del deploy_payload["trafficGroup"]
 	deploy_payload["execute-action"] = "definition"
-
 	debug("redeploy_payload=%s" % json.dumps(deploy_payload))
 	resp = s.put(iapp_exist_url, data=json.dumps(deploy_payload))
 	debug("redeploy resp=%s" % (pp.pformat(json.loads(resp.text))))

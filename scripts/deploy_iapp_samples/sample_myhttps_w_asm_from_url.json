@@ -3,8 +3,8 @@
 	"parent":"sample_defaults.json",
 	"strings":[
                 { "iapp__asmDeployMode":"redeploy-block" },
-                { "pool__addr":"10.0.1.79" },
-                { "pool__port":"443" },
+                { "pool__addr":"0.0.0.0" },
+                { "pool__port":"444" },
                 { "pool__DefaultPoolIndex":"0" },
                 { "vs__Name":"vs_standard_https_bundle_asm_from_url" },
                 { "vs__Description":"Standard HTTPS Virtual Server with bundled ASM and L7 policy" },
@@ -61,7 +61,7 @@
                          "rows" : [ 
                             { "row": ["0","forward/request/select/pool","pool:1"] },
                             { "row": ["1","asm/request/enable/policy","bundled:linux-high"] },
-                            { "row": ["default","asm/request/enable/policy","bundled:linux-low"]}
+                            { "row": ["default","asm/request/enable/policy","bundled:linux-high"]}
                          ]
                }       
         ]
