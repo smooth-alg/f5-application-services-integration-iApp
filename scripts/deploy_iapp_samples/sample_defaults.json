@@ -4,7 +4,7 @@
 	"template_name":"appsvcs_integration_v2.1dev_001",
 	"name": "latest",
 	"inheritedDevicegroup": "true",
-    "deviceGroup": "none",
+    "deviceGroup": "autoscale-group",
     "inheritedTrafficGroup": "true",
     "trafficGroup": "/Common/traffic-group-1",
     "partition":"Common",
