@@ -61,7 +61,7 @@
 		{ "feature__statsTLS":"auto" },
 		{ "feature__statsHTTP":"auto" },
 		{ "feature__insertXForwardedFor":"auto" },
-		{ "feature__redirectToHTTPS":"auto" },
+		{ "feature__redirectToHTTPS":"disabled" },
 		{ "feature__sslEasyCipher":"disabled" },
 		{ "feature__securityEnableHSTS":"disabled" },
 		{ "feature__easyL4Firewall":"auto" },
