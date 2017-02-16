@@ -4,7 +4,7 @@
 	"strings":[
                 { "iapp__asmDeployMode":"redeploy-block" },
                 { "pool__addr":"0.0.0.0" },
-                { "pool__port":"444" },
+                { "pool__port":"443" },
                 { "pool__DefaultPoolIndex":"0" },
                 { "vs__Name":"vs_standard_https_bundle_asm_from_url" },
                 { "vs__Description":"Standard HTTPS Virtual Server with bundled ASM and L7 policy" },
@@ -31,10 +31,8 @@
                         "name":"pool__Members",
                         "columnNames": [ "Index" ,"IPAddress", "Port", "ConnectionLimit", "Ratio", "PriorityGroup", "State", "AdvOptions" ],
                         "rows" : [
-                                { "row": [ "0", "10.0.3.152", "80", "0", "1", "0", "enabled", "none"] },
-                                { "row": [ "0", "10.0.0.100", "80", "0", "1", "0", "enabled", "none"]  },
-                                { "row": [ "1", "10.0.3.152", "80", "0", "1", "0", "disabled", "none"] },
-                                { "row": [ "1", "10.0.0.101", "80", "0", "1", "0", "disabled", "none"] } 
+                                { "row": [ "0", "10.0.3.70", "80", "0", "1", "0", "enabled", "none"] },
+                                { "row": [ "1", "10.0.3.71", "80", "0", "1", "0", "disabled", "none"] } 
                         ]
                 },
                 {
@@ -60,7 +58,7 @@
                          "columnNames": ["Group","Target","Parameter"],
                          "rows" : [ 
                             { "row": ["0","forward/request/select/pool","pool:1"] },
-                            { "row": ["1","asm/request/enable/policy","bundled:linux-high"] },
+                            { "row": ["1","asm/request/enable/policy","bundled:linux-low"] },
                             { "row": ["default","asm/request/enable/policy","bundled:linux-high"]}
                          ]
                }       
