@@ -115,7 +115,7 @@ def check_final_deploy(istat_key):
 		return(1)
 
 	current_time = int(time.time())
-	bashurl   = "https://%s/mgmt/tm/util/bash" % (args.host)
+	bashurl   = "https://%s:%s/mgmt/tm/util/bash" % (args.host,args.mgmtport)
 	istat_payload = { "command":"run",
 					 "utilCmdArgs":"-c 'tmsh run cli script appsvcs_get_istat \"%s\"'" % (istat_key)
 	               }
