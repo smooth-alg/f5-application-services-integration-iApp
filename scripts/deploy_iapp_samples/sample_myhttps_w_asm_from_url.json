@@ -32,7 +32,7 @@
                         "columnNames": [ "Index" ,"IPAddress", "Port", "ConnectionLimit", "Ratio", "PriorityGroup", "State", "AdvOptions" ],
                         "rows" : [
                                 { "row": [ "0", "10.0.3.70", "80", "0", "1", "0", "enabled", "none"] },
-                                { "row": [ "1", "10.0.3.71", "80", "0", "1", "0", "disabled", "none"] } 
+                                { "row": [ "1", "104.219.105.148", "80", "0", "1", "0", "disabled", "none"] } 
                         ]
                 },
                 {
